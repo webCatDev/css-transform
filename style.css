@@ -9,7 +9,7 @@
 body{
 font-family: "Poppins",sans-serif;
 width: 100%;
-min-height: 100vh;
+height: 100vh;
 background-image: linear-gradient(0deg ,#FF7D58, #FFCC4B
     );
 
@@ -40,6 +40,7 @@ background-image: linear-gradient(0deg ,#FF7D58, #FFCC4B
 .kutu{
     width: 5rem;
     height: 5rem;
+    
     background-color: rgb(16, 15, 15);
     box-shadow: 2px 2px 4px rgba(22, 22, 22, 0.289),
     2px 2px 8px rgba(22, 22, 22, 0.159);
