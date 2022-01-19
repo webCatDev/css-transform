@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>CSS Transform Özellikleri</title>
+  </head>
+  <body>
+    <div id="menu-btn">Menüyü Aç/Kapa</div>
+    <div id="placeholder"></div>
+    <div class="kutu" id="kutu"></div>
+    <aside>
+      <ul>
+        <li>
+          <h1>Özelliklere çift tıklayıp düzenleyebilirsiniz.</h1>
+        </li>
+        <li>
+          <input type="radio" name="tranform" id="none" value="none" />
+          <label for="none"><span contenteditable="true">none</span></label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="translate"
+            value="translate(50%,50%)"
+          />
+          <label for="translate"
+            ><span contenteditable="true">translate(50%,50%)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="translateX"
+            value="translateX(-100px)"
+          />
+          <label for="translateX"
+            ><span contenteditable="true">translateX(-100px)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="translateY"
+            value="translateY(-100px)"
+          />
+          <label for="translateY"
+            ><span contenteditable="true">translateY(-100px)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="translateZ"
+            value="translateZ(-100px)"
+          />
+          <label for="translateZ"
+            ><span contenteditable="true">translateZ(-100px)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="translate3d"
+            value="translate3d(-100px, 100px, 20px)"
+          />
+          <label for="translate3d"
+            ><span contenteditable="true"
+              >translate3d(-100px, 100px, 20px)</span
+            ></label
+          >
+        </li>
+        <li>
+          <input type="radio" name="tranform" id="scale" value="scale(1.5,1)" />
+          <label for="scale"
+            ><span contenteditable="true">scale(1.5,1)</span></label
+          >
+        </li>
+        <li>
+          <input type="radio" name="tranform" id="scaleX" value="scaleX(1.5)" />
+          <label for="scaleX"
+            ><span contenteditable="true">scaleX(1.5)</span></label
+          >
+        </li>
+        <li>
+          <input type="radio" name="tranform" id="scaleY" value="scaleY(1.5)" />
+          <label for="scaleY"
+            ><span contenteditable="true">scaleY(1.5)</span></label
+          >
+        </li>
+        <li>
+          <input type="radio" name="tranform" id="scaleZ" value="scaleZ(1.5)" />
+          <label for="scaleZ"
+            ><span contenteditable="true">scaleZ(1.5)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="scale3d"
+            value="scale3d(1.5,1,2)"
+          />
+          <label for="scale3d"
+            ><span contenteditable="true">scale3d(1.5,1,2)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="rotate"
+            value="rotate(45deg)"
+          />
+          <label for="rotate"
+            ><span contenteditable="true">rotate(45deg)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="rotateX"
+            value="rotateX(45deg)"
+          />
+          <label for="rotateX"
+            ><span contenteditable="true">rotateX(45deg)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="rotateY"
+            value="rotateY(45deg)"
+          />
+          <label for="rotateY"
+            ><span contenteditable="true">rotateY(45deg)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="rotateZ"
+            value="rotateZ(45deg)"
+          />
+          <label for="rotateZ"
+            ><span contenteditable="true">rotateZ(45deg)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="rotate3d"
+            value="rotate3d(1,2,3,45deg)"
+          />
+          <label for="rotate3d"
+            ><span contenteditable="true">rotate3d(1,2,3,45deg)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="skew"
+            value="skew(45deg)"
+          />
+          <label for="skew"
+            ><span contenteditable="true">skew(45deg, 180deg)</span></label
+          >
+        </li>
+
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="skewX"
+            value="skewX(45deg)"
+          />
+          <label for="skewX"
+            ><span contenteditable="true">skewX(45deg)</span></label
+          >
+        </li>
+
+         <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="skewY"
+            value="skewY(45deg)"
+          />
+          <label for="skewY"
+            ><span contenteditable="true">skewY(45deg)</span></label
+          >
+        </li>
+
+         <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="perspective"
+            value="perspective(200)"
+          />
+          <label for="perspective"
+            ><span contenteditable="true">perspective(200)</span></label
+          >
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="tranform"
+            id="matrix"
+            value="matrix(0.866,0.5,-0.5,0.866,0,0)"
+          />
+          <label for="matrix"
+            ><span contenteditable="true">matrix(0.866,0.5,-0.5,0.866,0,0)</span></label
+          >
+        </li >
+        <li>
+        <input
+            type="radio"
+            name="tranform"
+            id="matrix3d"
+            value="matrix3d(0.866,0.5,-0.5,0.866,0,0,0,0,0,0,0,0,0,0,0,0)"
+          />
+          <label for="matrix3d"
+            ><span contenteditable="true">matrix3d(0.866,0.5,-0.5,0.866,0,0,0,0,0,0,0,0,0,0,0,0)</span></label
+          >
+        </li>
+
+      </ul>
+    </aside>
+  </body>
+</html>
